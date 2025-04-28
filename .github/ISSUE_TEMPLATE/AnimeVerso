@@ -1,7 +1,7 @@
-name: '🚀 Solicitar Novo Projeto'
+name: '🚀 AnimeVerso'
 description: 'Solicitar a criação de um novo projeto na organização'
-title: '[NOVO PROJETO] Solicitação de criação de projeto'
-labels: ['novo-projeto', 'em-análise']
+title: '[AnimeVerso] Solicitação de criação de projeto'
+labels: ['AnimeVerso', 'em-análise']
 body:
   - type: markdown
     attributes:
@@ -12,7 +12,7 @@ body:
     attributes:
       label: 'Nome do Projeto'
       description: 'Digite o nome do novo projeto'
-      placeholder: 'Ex: Nucleo 42'
+      placeholder: 'AnimeVerso'
     validations:
       required: true
 
@@ -21,7 +21,10 @@ body:
     attributes:
       label: 'Descrição do Projeto'
       description: 'Forneça uma breve descrição do projeto, seus objetivos e possíveis benefícios'
-      placeholder: 'Este projeto visa criar um sistema de...'
+      placeholder: |
+        AnimeVerso é uma plataforma que visa criar uma área onde fãs de anime possam jogar RPG de forma imersiva. 
+        Permitirá divisão em vilas, clãs, além de controle de fichas, status (vida, chakra/mana, buffs/debuffs).
+        Terá um site Web integrado com bots no Discord para dar suporte às narrativas e partidas de RPG.
     validations:
       required: true
 
@@ -31,7 +34,6 @@ body:
       label: 'Usar GitHub Projects?'
       description: 'O projeto utilizará o GitHub Projects para gestão de tarefas?'
       options:
-        - 'Não'
         - 'Sim'
     validations:
       required: true
@@ -44,10 +46,7 @@ body:
       options:
         - label: 'Back-end'
         - label: 'Front-end'
-        - label: 'Mobile (Android e iOS)'
-        - label: 'Mobile (Multiplataforma)'
         - label: 'Design (apenas se usar GitHub Projects)'
-        - label: 'Monorepo (selecione apenas esta opção se for um único repositório para todo o projeto)'
     validations:
       required: true
 
@@ -56,7 +55,7 @@ body:
     attributes:
       label: 'Seu Username no GitHub'
       description: 'Digite seu nome de usuário no GitHub'
-      placeholder: 'Ex: octocat'
+      placeholder: 'alvarowisky'
     validations:
       required: true
 
@@ -65,10 +64,11 @@ body:
     attributes:
       label: 'Seu Username no Discord'
       description: 'Digite seu nome de usuário no Discord'
-      placeholder: 'Ex: octocat'
+      placeholder: 'wisky9169'
     validations:
       required: true
 
   - type: markdown
     attributes:
       value: 'Obrigado por preencher todas as informações. Sua solicitação será analisada em breve.'
+
